@@ -1,9 +1,9 @@
 let urls = [
-	'https://blog.cmliussss.com#Cloudflare CDN',
-	'https://fastly.blog.cmliussss.com#Fastly CDN',
-	'https://gcore.blog.cmliussss.com#Gcore CDN',
-	'https://vercel.blog.cmliussss.com#Vercel CDN',
-	'https://xn--1uto7rutmzjk.us.kg#备用地址'
+	'https://blog.51281868.xyz#CF三网 CDN',
+	'https://fastly.blog.51281868.xyz#Fastly CDN',
+	'https://gcore.blog.51281868.xyz#Gcore CDN',
+	'https://vercel.blog.51281868.xyz#Vercel CDN',
+	'https://fastly.blog.51281868.xyz#备用地址'
 ];
 
 export default {
@@ -15,12 +15,12 @@ export default {
 		// 如果 env.URLS 存在，则添加到数组
 		if (env.URL) urls = await ADD(env.URL);
 		
-		const ads = env.ADS || 'google.com, pub-9350003957494520, DIRECT, f08c47fec0942fa0';
-		const 网站图标 = env.ICO || 'https://raw.cmliussss.com/favicon.ico';
-		const 网站头像 = env.PNG || 'https://raw.cmliussss.com/IMG_0038.png';
-		const 网络备案 = env.BEIAN || `<a href='https://icp.gov.moe/'>萌ICP备-20070707号</a>`;
+		//const ads = env.ADS || 'google.com, pub-9350003957494520, DIRECT, f08c47fec0942fa0';
+		const 网站图标 = env.ICO || 'https://345ffee.webp.li/2024/10/5a42e3db05a05a17f5c62ab51149e6fb.png';
+		const 网站头像 = env.PNG || 'https://345ffee.webp.li/2024/10/b2c7cbf159bea02a4f2057ac15fcb39b.png';
+		const 网络备案 = env.BEIAN || `<a href='https://icp.gov.moe/'>萌ICP备-陕A72RXX号</a>`;
 		const 网页标题 = env.TITLE || 'BlogCDN 智能访问网关';
-		const 站点名称 = env.NAME || 'CMLiussss Blog';
+		const 站点名称 = env.NAME || '背锅的侠-Blog';
 		if (url.pathname.toLowerCase() == '/ads.txt') {
 			return new Response(ads, {
 				headers: {
